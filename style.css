@@ -1,0 +1,76 @@
+body{
+  background-image: url("img/BG.jpg");
+  font-family: DG Baysan Light;
+  background-size: cover;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  color: rgb(21, 38, 53);
+}
+form{
+  margin: 20px auto;
+  width: 320px;
+  color: rgb(0, 0, 0);
+}
+input{
+  padding: 10px;
+  font-size: inherit;
+}
+input[type="text"] {
+  display: block;
+  margin-bottom: 25px;
+  width: 100%;
+  border: 2px solid rgb(255, 255, 255);
+  background: #e4e3dc;
+}
+input[type="password"] {
+  display: block;
+  margin-bottom: 25px;
+  width: 100%;
+  border: 2px solid rgb(255, 255, 255);
+  background: #e4e3dc;
+}
+input[type="email"] {
+  display: block;
+  margin-bottom: 25px;
+  width: 100%;
+  border: 2px solid rgb(255, 255, 255);
+  background: #e4e3dc;
+}
+input[type="radio"] {
+  margin: 0 8px 25px 18px;
+}
+input[type="radio"]:first-child{
+  margin-left: 0;
+}
+input[type="submit"]{
+  width: 344px;
+  height: 45px;
+  border: none;
+  background: #b9b9b3;
+  color: rgb(0, 0, 0);
+  font-family: DG Baysan Light;
+}
+input[type="submit"]:focus{
+  width: 344px;
+  height: 45px;
+  border: 2px solid;
+  border-color: rgb(255, 255, 255);
+  background: rgb(27, 52, 73);
+  color: #c9c8c2;
+  font-family: DG Baysan Light;
+  
+}
+input:focus{
+  background-color: white;
+}
+input[type="radio"]:checked + label{
+  font-weight: bold;
+}
+input{
+  border-radius: 8px;
+}
+input::placeholder { 
+font-family: DG Baysan Light;
+}
