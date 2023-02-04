@@ -82,10 +82,10 @@ ul li:hover::before{
   opacity: 0.5;
   width: 80px;
 }
-h1{
+/** h1{
   text-align: center;
   margin-top: 20px;
   font-size: 40px;
   color: white;
   text-shadow: 8px 6px 5px rgb(10, 7, 167);
-}
+}**/
