@@ -1,76 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body{
-  background-image: url("img/BG.jpg");
+  background: linear-gradient(#01012e, #240019);
+  height: 100vh;
   font-family: DG Baysan Light;
-  background-size: cover;
+}
+section{
+  background-image: none;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul{
+  text-align: center;
+}
+ul:hover li a{
+  opacity: 0;
+}
+ul li{
+  list-style: none;
+  margin: 14px 0;
+}
+ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 20px;
+  letter-spacing: 4px;
+  background: darkblue;
+  padding: 6px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  transition: 0.5s;
+  text-transform: uppercase;
+  width: 120px;
+  position: relative;
+  z-index: 10;
+}
+ul li a:hover{
+  transform: scale(1.5);
+  background: darkmagenta;
+  opacity: 1;
+}
+ul li::after{
+  content: attr(data-text);
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 80px;
+  font-weight: 900;
+  text-transform: uppercase;
+  opacity: 0;
+  letter-spacing: 50px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+ul li:hover:after{
+  opacity: 0.5;
+  letter-spacing: 5px;
+}
+ul li::before{
+  content: '';
+  width: 180px;
+  height: 80px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 70%);
+  border-radius: 50%;
+  box-shadow: 0 0 80px orangered;
+  opacity: 0;
+  transition: 0.5s;
+}
+ul li:hover::before{
+  opacity: 0.5;
+  width: 80px;
 }
 h1{
   text-align: center;
-  font-size: 50px;
-  color: rgb(21, 38, 53);
-}
-form{
-  margin: 20px auto;
-  width: 320px;
-  color: rgb(0, 0, 0);
-}
-input{
-  padding: 10px;
-  font-size: inherit;
-}
-input[type="text"] {
-  display: block;
-  margin-bottom: 25px;
-  width: 100%;
-  border: 2px solid rgb(255, 255, 255);
-  background: #e4e3dc;
-}
-input[type="password"] {
-  display: block;
-  margin-bottom: 25px;
-  width: 100%;
-  border: 2px solid rgb(255, 255, 255);
-  background: #e4e3dc;
-}
-input[type="email"] {
-  display: block;
-  margin-bottom: 25px;
-  width: 100%;
-  border: 2px solid rgb(255, 255, 255);
-  background: #e4e3dc;
-}
-input[type="radio"] {
-  margin: 0 8px 25px 18px;
-}
-input[type="radio"]:first-child{
-  margin-left: 0;
-}
-input[type="submit"]{
-  width: 344px;
-  height: 45px;
-  border: none;
-  background: #b9b9b3;
-  color: rgb(0, 0, 0);
-  font-family: DG Baysan Light;
-}
-input[type="submit"]:focus{
-  width: 344px;
-  height: 45px;
-  border: 2px solid;
-  border-color: rgb(255, 255, 255);
-  background: rgb(27, 52, 73);
-  color: #c9c8c2;
-  font-family: DG Baysan Light;
-  
-}
-input:focus{
-  background-color: white;
-}
-input[type="radio"]:checked + label{
-  font-weight: bold;
-}
-input{
-  border-radius: 8px;
-}
-input::placeholder { 
-font-family: DG Baysan Light;
+  margin-top: 20px;
+  font-size: 40px;
+  color: white;
+  text-shadow: 8px 6px 5px rgb(10, 7, 167);
 }
